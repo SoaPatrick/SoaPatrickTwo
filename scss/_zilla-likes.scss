@@ -1,0 +1,46 @@
+.zilla-likes,
+.zilla-likes:hover,
+.zilla-likes:focus,
+.zilla-likes.active {
+	font-size: 18px;
+	margin: 0 !important;
+	padding: 0 !important;
+	background: none;
+	
+	&:before {
+		padding-right: 5px;
+	    display: inline-block;
+	    font: normal normal normal 14px/1 FontAwesome;
+	    font-size: inherit;
+	    text-rendering: auto;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;				
+	    content: "\f08a";
+	}			
+}
+
+.zilla-likes {
+	float: right;
+}
+
+.zilla-likes:hover,
+.zilla-likes:focus,
+.zilla-likes.active {	
+	&:before,
+	.zilla-likes-count {
+		color: red;	
+	}
+}
+
+.zilla-likes:hover,
+.zilla-likes:focus {
+	.zilla-likes-count {
+		color: red;
+	}
+}
+
+.zilla-likes.active {
+	.zilla-likes-count {
+		color: $text-color;
+	}
+}

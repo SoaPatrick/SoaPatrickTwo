@@ -1,0 +1,11 @@
+/* article styling */
+
+body.search article.post,
+body.archive article.post,
+body.blog article.post {
+	background: $article-bg-color;	
+	
+	.entry-header {
+		padding: $article-padding;
+	}	
+}

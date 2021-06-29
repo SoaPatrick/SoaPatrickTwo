@@ -1,0 +1,64 @@
+.nav-wrapper {
+	background: $grey-very-light;
+    margin: 30px 0;
+    position: relative;
+    line-height: 0;
+    
+    .pagination {
+	    margin: 0;
+	    
+		> li > a,
+		> li > span	{
+			border: 0;
+			color: $text-color;
+			background-color: transparent;
+		}		    
+	    
+		> li > a:hover, 
+		> li > span:hover, 
+		> li > a:focus, 
+		> li > span:focus,
+		> li.active > a, 
+		> li.active > span, 
+		> li.active > a:hover, 
+		> li.active > span:hover, 
+		> li.active > a:focus, 
+		> li.active > span:focus,
+		> li > .current {
+			color: #fff;
+			background-color: $brand-secondary;		
+		}		    
+    }
+}
+
+
+
+.nav-links {
+	margin-bottom: 30px;	
+	
+	.btn-default {
+		font-weight: 500;
+		background-color: $grey-very-light;
+		border: 0;
+		
+		.fa-lg {
+			line-height: .7em;
+		}
+		
+		.meta-nav-prev .fa {
+			padding-right: 15px;
+		}
+		
+		.meta-nav-next .fa {
+			padding-left: 15px;
+		}		
+	}
+	
+	a:focus,
+	a:hover {
+		&.btn-default {
+			background-color: $brand-secondary;
+			color: #fff;
+		}
+	}
+}

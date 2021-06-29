@@ -1,0 +1,32 @@
+@mixin post-color($color) {
+	background-color: $color !important;
+	
+	&:after {
+	    box-shadow: 0 0 0 0 $color inset;
+	}
+	
+	&:hover:after {
+		box-shadow: 0 0 0 11px $color inset;
+	}	
+}
+
+article.post {
+	&.format-quote,
+	&.format-link,
+	&.format-status {
+		
+		&.background-default { @include post-color($brand-secondary); }
+		&.background-red { @include post-color(#F44336); }
+		&.background-pink { @include post-color(#E91E63); }
+		&.background-purple { @include post-color(#9C27B0); }
+		&.background-deep-purple { @include post-color(#673AB7); }
+		&.background-indigo { @include post-color(#3F51B5); }
+		&.background-cyan { @include post-color(#00BCD4); }
+		&.background-teal { @include post-color(#009688); }
+		&.background-green { @include post-color(#4CAF50); }
+		&.background-orange { @include post-color(#FF9800); }
+		&.background-deep-orange { @include post-color(#FF5722); }
+		&.background-brown { @include post-color(#795548); }
+			
+	}
+}

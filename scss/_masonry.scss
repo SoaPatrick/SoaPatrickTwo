@@ -1,0 +1,57 @@
+/* blog home masonry */
+body.search,
+body.blog,
+body.archive {		
+	@media (min-width: 992px){
+		article.post:after {
+		    pointer-events: none;
+		    content: ' ';
+		    display: block;
+		    position: absolute;
+		    z-index: 5;
+		    left: 0;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    box-shadow: 0 0 0 0 $brand-secondary inset;
+		    -webkit-transition: all 220ms;
+		    transition: all 220ms;
+		}
+		
+		article.post:hover:after {
+			box-shadow: 0 0 0 11px $brand-secondary inset;
+			-webkit-transition: all 300ms;
+			transition: all 300ms;
+		}
+	}		
+	
+	@media (min-width: 1200px){			
+		article.post {
+		    width: $grid-width-lg;
+		}	
+	}
+	
+	@media (max-width: 1199px){			
+		article.post {
+		    width: $grid-width-md;
+		}	
+	}	
+	
+	@media (max-width: 991px){			
+		article.post {
+		    width: $grid-width-sm;
+		}	
+	}		
+	
+	@media (max-width: 767px){
+		article.post {
+		    width: $grid-widtg-xs;
+		}	
+	}
+	
+	@media (max-width: 480px) {
+		article.post {
+		    width: $grid-widtg-xxs;
+		}	
+	}	
+}

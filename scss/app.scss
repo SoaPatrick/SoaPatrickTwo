@@ -1,0 +1,88 @@
+/* custom font */
+$sf-font-path: "fonts";
+$font-family-base: "San Francisco Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* bootstrap variables */
+$brand-primary: rgb(1,87,155);
+$brand-secondary: rgb(41,182,246);
+
+$link-color: $brand-secondary;
+
+$border-radius-base: 0;
+$border-radius-large: 0;
+$border-radius-small: 0;
+
+/* import bootstrap */
+@import "../bootstrap/stylesheets/_bootstrap.scss";
+
+/* custom variables */
+$logo-color: #262626;
+$grey-very-light: #f3f3f3;
+$article-bg-color: $grey-very-light;
+$article-padding: 20px;
+
+$quote-bg-color: rgb(41,182,246);
+$link-bg-color: rgb(41,182,246);
+
+$container-width-lg: 1140px;
+$container-width-md: 940px;
+$container-width-sm: 720px;
+
+/* masonry blog grid */
+$grid-number-lg: 3;
+$grid-number-md: 3;
+$grid-number-sm: 2;
+$grid-number-xs: 2;
+$grid-number-xxs: 1;
+
+$grid-width-lg: ($container-width-lg - (($grid-number-lg - 1) * $grid-gutter-width)) / $grid-number-lg;
+$grid-width-md: ($container-width-md - (($grid-number-md - 1) * $grid-gutter-width)) / $grid-number-md;
+$grid-width-sm: ($container-width-sm - (($grid-number-sm - 1) * $grid-gutter-width)) / $grid-number-sm;
+$grid-widtg-xs: calc((100% / #{$grid-number-xs}) - #{$grid-gutter-width});
+$grid-widtg-xxs: calc((100% / #{$grid-number-xxs}) - #{$grid-gutter-width});
+
+/* imports */
+@import "_scaffolding.scss";
+@import "_loading.scss";
+@import "_typography.scss";
+@import "_logo.scss";
+@import "_masonry.scss";
+@import "_post.scss";
+@import "_post-single.scss";
+@import "_post-index.scss";
+@import "_post-navigation.scss";
+@import "_post-colors.scss";
+@import "_search-form.scss";
+@import "_carousel.scss";
+@import "_footer.scss";
+
+@import "_wp-review.scss";
+@import "_zilla-likes.scss";
+@import "_sharify.scss";
+
+
+@import "_sanfrancisco.scss";
+
+
+.page-header {
+	margin-top: 0;
+	border-bottom: 1px solid rgba($text-color, .25);
+	
+	h1 {
+		margin-top: 0;
+	}
+}
+
+.content-none {
+	margin-bottom: 120px;
+	
+	p {
+		font-size: 18px;
+	}
+}
+
+.btn:active, 
+.btn.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}

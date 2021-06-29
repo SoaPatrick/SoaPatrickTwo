@@ -1,0 +1,89 @@
+#masthead {
+	
+	a {
+		color: transparent;
+		
+		&:focus,
+		&:hover {
+			color: transparent;
+			text-decoration: none;
+		}
+	}
+	
+	.logo {
+		margin: 50px 0;
+		display: inline-block;
+		
+		.sp-logo {
+			width: 120px;
+			height: auto;
+			
+			.letter-p,
+			.letter-s {
+				fill: $body-bg;
+			}	
+			
+			.circle {
+				fill: $logo-color;
+			}
+		}
+		
+		.soapatrick-logo {
+			width: 150px;
+			height: auto;
+			margin: 45px 0 0 30px;
+			vertical-align: top;			
+			
+			.letter-s,
+			.letter-o,
+			.letter-a,
+			.letter-p,
+			.letter-t,
+			.letter-r,
+			.letter-i,
+			.letter-c,
+			.letter-k {
+				fill: $logo-color;
+			}
+		}		
+		
+		@media (max-width: 768px) {
+			.sp-logo {
+				width: 100px;		
+			}
+			.soapatrick-logo {
+				width: 120px;
+				margin: 40px 0 0 20px;	
+			}		
+		}		
+		
+		
+/*
+		.sp-logo:hover {
+			.circle {
+				fill: $brand-primary;
+			}
+			
+			.letter-p,
+			.letter-s {
+			}			
+					
+		}	
+		
+		.soapatrick-logo:hover {			
+			.letter-s,
+			.letter-o,
+			.letter-a,
+			.letter-p,
+			.letter-t,
+			.letter-r,
+			.letter-i,
+			.letter-c,
+			.letter-k {
+				fill: $brand-primary;
+			}
+		}		
+*/
+		
+	}
+}

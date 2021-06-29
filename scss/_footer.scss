@@ -1,0 +1,90 @@
+footer {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin-top: 40px;
+	background: #262626;
+	color: #767676;
+	font-size: 16px;
+	font-weight: 200;
+	
+	@media (max-width: 767px) {
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	
+	h2 {
+		font-weight: 300;
+		font-size: 26px;
+	}
+	
+	@media (min-width: 768px) {
+		.social {
+			float: right;
+			text-align: right;
+			h2 {
+				margin-top: 0;
+			}		
+		} 
+	}
+	
+	@media (max-width: 767px) {
+		.social {
+			h2 {
+				margin-top: 40px;
+			}		
+		} 
+	}	
+			
+	a {
+		color: #bcbcbc;
+		text-decoration: underline;
+		
+		&:focus,
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	
+	.tagcloud a {
+		background: #373737;
+		text-decoration: none;
+	    padding: 5px 10px;
+	    font-size: 16px !important;
+	    margin: 2px;
+	    line-height: 2.4;
+	    white-space: nowrap;
+	    
+	    &:focus,
+	    &:hover {
+			background: $brand-secondary;		    
+			text-decoration: none;
+	    }
+	}
+	
+	.fa {
+		padding: 10px;
+		background: #373737;
+	    margin: 2px;
+	    width: 40px;
+	    font-size: 20px;
+	    text-align: center;	    	
+	}
+	
+	a:focus,
+	a:hover {
+		.fa {
+			background: $brand-secondary;
+			color: #fff;
+		}
+	}
+	
+	.copyright {
+		font-weight: 400;
+		font-size: 14px;
+		margin: 60px 0 0 0;
+		color: #555;
+	}
+}

@@ -1,0 +1,131 @@
+article.post {
+	margin-bottom: $grid-gutter-width;
+	
+	.border {
+		height: 11px;
+		background: $brand-secondary;
+	}
+		
+	img.wp-post-image {
+		width: 100%;
+		height: auto;
+	}	
+	
+	.entry-header {
+		a {
+			color: $text-color;
+			
+			&:focus,
+			&:hover {
+				text-decoration: none;
+				color: $link-hover-color;
+			}			
+		}			
+		
+		h2 {
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-bottom: 10px;
+			font-size: 26px;
+			font-weight: 400;
+			border-bottom: 1px solid rgba($text-color, .25);			
+		}		
+			
+		.review-bar {
+			line-height: 1;
+			
+			.review-total-only {
+			    margin: 0 0 10px -3px;
+			    padding: 0 !important;
+			    background-color: transparent;
+			}				
+		}			
+	}
+	
+	.entry-meta {
+		padding-top: 10px;
+		
+		.posted-on,
+		.tags,
+		.likes {
+			display: block;
+		}				
+	}
+	
+	/* posttype: link, quote & status  */
+	&.format-quote,
+	&.format-link,
+	&.format-status {
+		color: #fff;
+		padding: $article-padding;
+		
+		a {
+			color: #fff;
+			text-decoration: underline;
+			
+			&:focus,
+			&:hover {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+		
+		.fa {
+			font-size: 30px;
+			float: left;
+		}	
+		
+		.posted-on {
+			padding-left: 45px;
+			font-size: 14px;
+		}			
+	}
+	
+	&.format-link {			
+		h2 {
+			padding: 0;
+			margin: 0 0 10px 45px;
+			font-size: 30px;
+			line-height: 1.1;	
+			font-weight: 400;		
+		}	
+		
+		.link {
+			margin-left: 45px;
+		}	
+	}	
+
+	&.format-quote {		
+		blockquote {
+			border-left: 0;
+			padding: 0;
+			margin: 0 0 10px 45px;
+			font-size: 30px;
+			line-height: 1.1;
+		}
+		
+		p.author {
+			font-style: italic;
+			margin: 0 0 0 45px;
+			
+			&:before {
+				content: "- "
+			}
+		}		
+	}
+	
+	&.format-status {		
+		p {
+			font-size: 18px;
+			margin-left: 45px;
+		}
+	}
+	
+	&.format-status.instagram-post {
+		padding: 0;
+		
+		.entry-header {
+			padding: $article-padding;
+		}				
+	}				
+}

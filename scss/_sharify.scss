@@ -1,0 +1,10 @@
+article.post {
+	&.format-quote,
+	&.format-link,
+	&.format-status {
+
+		.sharify-container {
+			display: none;			
+		}
+	}
+}
